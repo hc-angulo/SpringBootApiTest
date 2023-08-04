@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "e2f01b84-4cfc-4b06-bb90-8f09dfa6f167",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "19252750"
+	},
+	"item": [
+		{
+			"name": "Traer Fabricantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/maker/find"
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Fabricante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/api/maker/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Traer Productos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/api/product/create"
+			},
+			"response": []
+		}
+	]
+}
