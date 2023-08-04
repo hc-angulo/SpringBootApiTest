@@ -31,5 +31,17 @@ public class MakerService implements IMakerService{
     public void deleteById(Long id) {
         makerRepository.deleteById(id);
     }
+
+   /* @Override
+    public void edit(Long id,String name) {
+        Maker maker = makerRepository.findById(id).orElse(null);
+        maker.setName(name);
+        makerRepository.save(maker);
+    }*/
+    public void edit(Long id,String name) {
+        Maker maker = this.findById(id);
+        maker.setName(name);
+        this.save(maker);
+    }
+
 }
-    //

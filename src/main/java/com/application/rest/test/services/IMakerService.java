@@ -12,4 +12,6 @@ public interface IMakerService {
         void save(Maker maker);
 
         void deleteById(Long id);
+
+        void edit(Long id,String name);
 }

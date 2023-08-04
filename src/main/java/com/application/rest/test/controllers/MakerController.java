@@ -22,6 +22,24 @@ public class MakerController {
         makerService.save(maker);
         return "Fabricante creado exitosamente";
     }
+    //Método I para eliminar
+    @DeleteMapping("/deleteById/{id}")
+    public String deleteById(@PathVariable Long id){
+        makerService.deleteById(id);
+        return "Eliminado exitosamente";
+    }
+    //Método II para eliminar
+    @DeleteMapping("/deleteById")
+    public String deleteByID(@RequestParam Long id) {
+        makerService.deleteById(id);
+        return "Eliminado exitosamente";
+    }
 
+    //Método para editar
+    @PutMapping("/editById")
+    public  String editMaker(@RequestParam Long id,@RequestParam String name){
+        makerService.edit(id,name);
+        return "Actualización hecha exitosamente";
+    }
 
 }
